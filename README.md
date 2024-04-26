@@ -49,6 +49,7 @@ DISCLAIMER: Altere o caminho do ```analisador.py``` na estrutura do arquivo ```a
 - `main.py`: Contém o código principal da interface gráfica e lógica de negócios.
 - `pip.cmd`: Modifica parâmetros especiais na pasta /AppData/Roaming/pip/pip.ini de modo que o pip não exiba erros quando fizer download dos módulos.
 - `abrir.cmd`: Script padrão de inicialização do código em Python
+- `comandos.txt`: Se você estiver com preguiça de copiar os códigos do GitHub :)
 
 ## Contribuição
 Se você encontrar bugs, tiver sugestões de melhorias ou quiser contribuir de outras formas, sinta-se à vontade para abrir uma issue ou enviar um pull request.
