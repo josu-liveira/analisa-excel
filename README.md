@@ -34,7 +34,7 @@ return data
 ## Instalação
 1. Primeiramente instale o interpretador do Python em seu sistema. Você pode obtê-lo em: https://www.python.org/downloads/
 
-2. Execute o script ```pip.cmd```. Ele é responsável por criar parâmetros no arquivo `/AppData/Roaming/pip/pip.ini`, onde pip o pip é setado para fazer sua busca apenas em repositórios especificados. Isso é útil quando você enfrenta problemas de certificados SSL não encontrados.
+2. Execute o script ```pip.cmd```. Ele é responsável por criar parâmetros no arquivo `/AppData/Roaming/pip/pip.ini`, onde o pip é setado para fazer sua busca apenas em repositórios especificados. Isso é útil quando você enfrenta problemas de certificados SSL não encontrados.
    - Para mais detalhes leia o artigo [pip install fails](https://stackoverflow.com/questions/25981703) do Stack Overflow.
 
 3. Agora, execute os comandos em seu ambiente de terminal ou Windows PowerShell:
