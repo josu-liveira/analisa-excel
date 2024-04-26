@@ -43,7 +43,7 @@ pip install openpyxl
 3. Clique em "Analisar arquivos" para iniciar o proecsso de análise dos dados importados.
 4. Selecione um diretório de destino e clique em "Exportar análise" para salvar o resultado da análise.
 
-DISCLAIMER: Altere o caminho do ```analisador.py``` na estrutura do arquivo ```abrir.cmd``` para evitar erros.
+*DISCLAIMER: Altere o caminho do ```analisador.py``` na estrutura do arquivo ```abrir.cmd``` para evitar erros.
 
 ## Estrutura do Código
 - `main.py`: Contém o código principal da interface gráfica e lógica de negócios.
