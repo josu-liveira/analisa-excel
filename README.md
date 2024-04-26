@@ -1,6 +1,5 @@
 # Analisador de Dados
 
-## Descrição
 Este é um programa com interface gráfica em Python que permite importar, analisar e exportar dados de arquivos Excel.
 
 ## Funcionalidades
