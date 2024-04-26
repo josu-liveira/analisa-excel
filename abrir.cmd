@@ -7,7 +7,7 @@ set PYTHON_PATH=%LOCALAPPDATA%\Programs\Python\Python312\python.exe
 rem Verifique se a versão do Python está correta (substitua "XX" pela versão real do Python instalada).
 
 rem Defina o caminho para o arquivo Python que você deseja executar.
-set PYTHON_SCRIPT=C:\Users\Josue\Desktop\analisador.py
+set PYTHON_SCRIPT='coloque o caminho do arquivo analisador.py'
 
 rem Execute o arquivo Python usando o interpretador Python padrão.
 "%PYTHON_PATH%" "%PYTHON_SCRIPT%"
