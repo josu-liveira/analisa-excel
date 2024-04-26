@@ -1,11 +1,30 @@
-# Analisador de Dados
+# Aplicativo analisador de dados xlsx
 
-Este é um programa com interface gráfica em Python que permite importar, analisar e exportar dados de arquivos Excel.
+Este é um aplicativo com interface gráfica em Python baseada na biblioteca tkinter, que permite importar, analisar e exportar dados de arquivos Excel.
 
 ## Funcionalidades
 - Importar arquivos Excel individuais ou uma pasta inteira contendo arquivos Excel.
 - Analisar os arquivos importados e combinar os dados em uma única planilha.
 - Exportar o resultado da análise para um arquivo Excel de forma instantânea.
+
+## ATENÇÃO!!
+
+Esse código é baseado em um DataFrame do pandas. Para conseguir executá-lo, você deve modificar a função ```extrair_dados```, de modo que o código consiga ler sua planilha de acordo com sua necessidade. Abaixo está um exemplo:
+
+```python
+def extrair_dados(arquivo):
+    df = pd.read_excel(arquivo)
+    data = {
+        "Parametro 1": df.iloc[4, 2],
+        "Parametro 2": df.iloc[5, 2],
+        "Parametro 3": df.iloc[4, 7],
+        "Parametro 4": df.iloc[5, 7],
+        "Parametro 5": df.iloc[9, 2],
+        "Parametro 6": df.iloc[9, 7],
+        "Parametro 7": df.iloc[7, 2],
+}
+return data
+```
 
 ## Requisitos
 - [X] Python versão 3.x
@@ -13,9 +32,12 @@ Este é um programa com interface gráfica em Python que permite importar, anali
 
 
 ## Instalação
-1. Certifique-se de ter o Python 3.x instalado em seu sistema.
-   
-2. Instale as bibliotecas necessárias executando o seguintes comandos no terminal ou prompt de comando:
+1. Primeiramente instale o interpretador do Python em seu sistema. Você pode obtê-lo em: https://www.python.org/downloads/
+
+2. Execute o script ```pip.cmd```. Ele é responsável por criar parâmetros no arquivo `/AppData/Roaming/pip/pip.ini`, onde pip o pip é setado para fazer sua busca apenas em repositórios especificados. Isso é útil quando você enfrenta problemas de certificados SSL não encontrados.
+   - Para mais detalhes leia o artigo [pip install fails](https://stackoverflow.com/questions/25981703) do Stack Overflow.
+
+3. Agora, execute os comandos em seu ambiente de terminal ou Windows PowerShell:
 
 ```python
 pip install pandas
@@ -24,35 +46,38 @@ pip install pandas
 pip install openpyxl
 ```
 
-
 ## Como Usar
 
 
 
-1. Execute o script *`abrir.cmd`.
-
-![image](https://github.com/josu-liveira/analisa-excel/assets/167824520/02d9b08c-13e9-48a4-8fe5-153211c52add)
 
 
-2. Use os botões para importar arquivos individuais ou em uma pasta.
+1. **É NECESSÁRIO alterar o caminho do arquivo** ```analisador.py``` dentro do arquivo ```abrir.cmd``` para executar o script corretamente.
 
 
-![image](https://github.com/josu-liveira/analisa-excel/assets/167824520/4c58533f-14c9-442d-b11b-889a21e987e9)
+```bash
+rem Defina o caminho para o arquivo Python que você deseja executar.
+set PYTHON_SCRIPT=C:/Coloque/Aqui/O/Caminho/Para/Seu/Arquivo.py
+```
+
+   - Logo após, execute o arquivo `abrir.cmd` para iniciar o script python.
+
+---
+
+2. Use os botões para fazer as análises e exportações.
 
 
-3. Clique em "Analisar arquivos" para iniciar o proecsso de análise dos dados importados.
-4. Selecione um diretório de destino e clique em "Exportar análise" para salvar o resultado da análise.
+   ![image](https://github.com/josu-liveira/analisa-excel/assets/167824520/4c58533f-14c9-442d-b11b-889a21e987e9)
 
-*DISCLAIMER: Altere o caminho do ```analisador.py``` na estrutura do arquivo ```abrir.cmd``` para evitar erros.
 
 ## Estrutura do Código
-- `main.py`: Contém o código principal da interface gráfica e lógica de negócios.
-- `pip.cmd`: Modifica parâmetros especiais na pasta /AppData/Roaming/pip/pip.ini de modo que o pip não exiba erros quando fizer download dos módulos.
+- `main.py`: Contém o código principal do aplicativo.
+- `pip.cmd`: Modifica parâmetros especiais no arquivo `/AppData/Roaming/pip/pip.ini` para evitar erros.
 - `abrir.cmd`: Script padrão de inicialização do código em Python
-- `comandos.txt`: Se você estiver com preguiça de copiar os códigos do GitHub :)
+- `comandos.txt`: Se você estiver com preguiça de ler o que eu escrevi aqui no GitHub :)
 
 ## Contribuição
 Se você encontrar bugs, tiver sugestões de melhorias ou quiser contribuir de outras formas, sinta-se à vontade para abrir uma issue ou enviar um pull request.
 
 ## Licença
-Este projeto está licenciado sob a [MIT License](LICENSE).
+Este projeto está licenciado sob a [LICENÇA JOSUÉ](LICENSE).
