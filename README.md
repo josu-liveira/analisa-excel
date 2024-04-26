@@ -9,7 +9,7 @@ Este é um aplicativo com interface gráfica em Python baseada na biblioteca tki
 
 ## ATENÇÃO!!
 
-Esse código é baseado em um DataFrame do pandas. Para conseguir executá-lo, você deve modificar a função ```extrair_dados```, de modo que o código consiga ler sua planilha de acordo com sua necessidade. Abaixo está um exemplo:
+Esse código é baseado em um DataFrame do pandas. Para conseguir executá-lo, você deve modificar a extração dos dados usando o parâmetro `df.iloc[sua linha, sua coluna]` na função ```extrair_dados```, de modo que o código consiga ler sua planilha de acordo com sua necessidade. Abaixo está um exemplo:
 
 ```python
 def extrair_dados(arquivo):
