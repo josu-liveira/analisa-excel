@@ -1,4 +1,4 @@
-# Aplicativo analisador de dados xlsx
+# Aplicativo para linearização de dados - Excel
 
 Este é um aplicativo com interface gráfica em Python baseada na biblioteca tkinter, que permite importar, analisar e exportar dados de arquivos Excel.
 
